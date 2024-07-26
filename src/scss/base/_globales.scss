@@ -1,0 +1,76 @@
+@use 'variables' as v;
+@use 'mixins' as m; 
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+} 
+
+*,*::before,*:after{
+    box-sizing: inherit;
+} 
+
+
+body {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: v.$FuentePrincipal;  
+    background-color: rgb(75, 71, 88);  
+}    
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.6rem;
+}
+
+h3{
+    font-size: 2.8rem; 
+    text-align: center;
+    color: whitesmoke; 
+}
+
+h4{
+    font-size: 2rem; 
+    color: whitesmoke;
+    margin: .3rem; 
+    padding: .3rem;    
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    max-width: 92%;
+    border-radius: 5px; 
+}  
+
+p{
+    font-size: 1.5rem;
+    font-weight: 400; 
+    padding: 1rem 2rem; 
+    color: white;          
+}
+
+.input{
+    margin: .5rem auto; 
+    width: 85%;
+    min-height: 2rem; 
+    border: none; 
+    border-radius: 5px; 
+
+    @include m.Pc{
+        height: 3rem;  
+        font-size: 1.5rem;  
+    }    
+} 

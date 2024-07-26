@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Dynamic</title>
+    <link rel="stylesheet" href="build/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedor">
+        <div class="titulo">
+            <a href="indexLogin.html"><h1>Cars<span>DYNAMIC</span></h1></a>
+        </div>
+        <div class="titulo-icono">
+            <img class="icono" src="src/img/png-clipart-car-computer-icons-car-cartoon-compact-car-car.png" alt="Icono auto">
+            <label for="">Tus Mejores Autos</label>
+            <img class="icono" src="src/img/png-clipart-car-computer-icons-car-cartoon-compact-car-car.png" alt="Icono auto">
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-registro">
+            <form >
+                <h3>Registrate</h3>
+                    <div class="registro">
+                        <label for="emailIngresa">Ingresa tu coreo electronico</label>
+                        <input id="Email" class="input email-registro" type="email" placeholder="Correo Electronico">
+                    </div>
+
+                    <div class="registro">
+                        <label for="">Ingresa tu nombre de usuario</label>
+                        <input id="Usuario" type="text" class="input usuario-registro" placeholder="Usuario">
+                    </div>
+
+                    <div class="registro">
+                        <label for="contraseñaIngresa">Ingresa tu contraseña</label>
+                        <input id="Contraseña" class="input contraseña-registro" type="password" placeholder="Contraseña">
+                    </div>
+
+                    <div class="registro">
+                        <label for="">Repite tu contraseña</label>
+                        <input id="RepetirContraseña" type="password" class="input rptcontraseña-registro" placeholder="Repetir Contraseña">
+                    </div>
+
+                    <div class="registro">
+                        <a id="BtnRegistro"  href="#" type="submit">Registrar</a>
+                        <div class="loader noloader"></div>
+                        <span>Ya tienes una cuenta? <a id="linkLogin" href="indexLogin.html">Ingresa</a> </span>
+                    </div>
+                    
+            </form>
+        </div>
+    </main>
+
+    <div class="banner">
+        <div class="contenedor-img">
+
+            <img src="src/img/banner-auto-registro.jpg" alt="">
+        </div>
+    </div>
+
+
+    <footer class="contenedor">
+        <div class="titulo">
+            <h1>Cars<span>DYNAMIC</span></h1>
+        </div>
+        <div class="titulo-icono">
+            <img class="icono" src="src/img/png-clipart-car-computer-icons-car-cartoon-compact-car-car.png" alt="Icono auto">
+            <label for="">LLamanos ahora: 1149608952</label>
+            <img class="icono" src="src/img/png-clipart-car-computer-icons-car-cartoon-compact-car-car.png" alt="Icono auto">
+        </div>
+    </footer>
+    <script type="module" src="build/js/validacion_Registro.js"></script>
+</body>
+</html>

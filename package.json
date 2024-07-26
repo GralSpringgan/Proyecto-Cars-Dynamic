@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-carsdynamic",
+  "version": "1.0.0",
+  "description": "First Project with sass+gulp",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp"
+  },
+  "author": "Laporta Mauricio",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.6"
+  }
+}

@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+.contenedor-servicios{
+    margin: .4rem 1.2rem;  
+    padding: 1rem; 
+    background-color: v.$Azul; 
+    border-radius: 5px;
+    text-align: center;   
+    
+    
+    .icono{
+        margin: 1rem auto; 
+        padding: 1rem;       
+        max-width: 20rem;
+        align-items: center;      
+        background-color: v.$Amarillo; 
+        
+    }
+
+
+    label{
+        align-items: center;     
+        color: v.$Amarillo;
+        font-size: 2rem;   
+    }
+
+    @include m.Tablet{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);  
+    }
+}
+

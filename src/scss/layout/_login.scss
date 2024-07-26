@@ -1,0 +1,72 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.principal{
+     width: 100%;      
+     text-align: center;        
+    @include m.Tablet{
+
+        display: grid;
+        grid-template-columns: 25% 50% 25%;   
+        
+    } 
+}
+
+article{
+    background-image: url('/src/img/fondo-articulos.webp');
+    background-size: cover;
+    margin: 1rem; 
+    border-radius: 7px;  
+        
+} 
+
+.principal-formulario{
+    margin: 1rem;
+    background-image: url('/src/img/fondo azul.jpg'); 
+    border-radius: 15px; 
+    text-align: center;    
+
+    @include m.Tablet{
+ 
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        align-items: center; 
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    
+    label{
+        font-size: 1.5rem; 
+        color: v.$Amarillo;   
+    }
+
+    #BtnLogin{
+        background-color: v.$verde;
+        margin: 1rem auto; 
+        width: 85%; 
+        padding: .5rem; 
+        min-height: 2rem;
+        text-align: center;
+        color:whitesmoke ;  
+        font-size: 1.7rem;     
+        border-radius:5px ;          
+    }
+
+    #linkRegistro{
+        color: v.$Amarillo;
+        font-size: 1.5rem; 
+        margin: 2px; 
+    }
+    span{
+        color: whitesmoke;
+        margin-bottom: 5px;  
+        font-size: 1.5rem;    
+    }
+}
+
+ 
+ 
+

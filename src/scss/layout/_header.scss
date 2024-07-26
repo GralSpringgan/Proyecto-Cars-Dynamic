@@ -1,0 +1,108 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+ 
+header{
+    border-bottom: solid 4px v.$AzulClaro; 
+}
+.contenedor{
+    background-color: v.$GrisAzulado;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    
+  
+    h1{
+        padding: 1rem; 
+        margin-top: 0; 
+        color: v.$Azul;
+        
+        span{
+            color: v.$Amarillo; 
+        }
+    } 
+     
+    
+    @include m.Tablet{
+        
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: space-between; 
+        padding: 0 3rem;  
+
+        .titulo{
+            padding-top: 2rem; 
+        }
+    }
+}
+
+.titulo-icono{
+        padding: 0 5rem;  
+        padding-bottom: 1rem; 
+        display: flex; 
+        justify-content: space-between;
+        gap: 2rem;     
+    .icono{
+        max-width: 50px; 
+        max-height: 50px;  
+        animation: autos 3s infinite;  
+        
+        @keyframes autos {
+            0%{
+                transform: translateX(10px);
+                transform: translateY(10px); 
+            }
+
+            50%{
+                transform: translateX(2px);
+                transform: translateY(2px);  
+            }
+ 
+            100%{
+                transform: translateX(10px);
+                transform: translateY(10px); 
+            }
+        }
+    }
+        
+    label{
+        padding: 2rem 2rem; 
+        color: v.$Amarillo;
+        font-size: 2rem;  
+ 
+        @include m.Tablet{
+            font-size: 2.2rem;      
+        }
+
+        @include m.Telefono{
+            font-size: 1.5rem; 
+        }
+    }
+
+}
+
+//Usuario
+
+.img-usuario{   
+    max-width: 40px;  
+    padding-bottom: 1rem;       
+} 
+
+.cerrar-sesion{
+    max-width: 30px;
+    padding-top: 1.7rem;
+          
+}
+
+
+
+
+
+//apartado footer
+
+
+footer{
+    border-top: 2px solid v.$AzulClaro; 
+}
+
+

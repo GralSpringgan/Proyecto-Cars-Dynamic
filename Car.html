@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsDynamic</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="contenedor">
+        <div class="titulo">
+            <a href=""><h1>Cars<span>DYNAMIC</span></h1></a>
+        </div>
+        <div class="titulo-icono">
+            <img class="img-usuario" src="src/img/img-login.png" alt="Usuario">
+            <p class="nombre-usuario">Usuario</p>
+            <a href="indexLogin.html"><img class="cerrar-sesion" src="src/img/cerrar-sesion.png" class="desconectar"></a>
+            
+            
+        </div>
+    </header>
+
+    <nav class="navegador">
+        
+        <div class="contenedor-opcion">
+            <label class="label-navegador">Marca</label>
+            <select id="marca">
+                <option class="opcion"  value="">-seleccione</option>
+                <option class="opcion" value="chevrolet">Chevrolet</option>
+                <option class="opcion"  value="fiat">Fiat</option>
+                <option class="opcion" value="toyota">Toyota</option>
+                <option class="opcion" value="peugeot">Peugeot</option>
+        
+            </select>
+        </div>
+
+
+        <div class="contenedor-opcion">
+            <label class="label-navegador">Precio Minimo</label>
+            <select id="precioMinimo">
+                <option class="opcion"  value="">-seleccione</option>
+                <option class="opcion" value="5000">5000</option>
+                <option class="opcion"  value="10000">10000</option>
+                <option class="opcion"  value="15000">15000</option>
+                <option class="opcion"  value="20000">20000</option>
+                <option class="opcion"  value="30000">30000</option>
+            </select>
+        </div>
+
+        <div class="contenedor-opcion">
+            <label class="label-navegador">Precio Maximo</label>
+            <select id="precioMaximo">
+                <option class="opcion"  value="">-seleccione</option>
+                <option class="opcion" value="5000">5000</option>
+                <option class="opcion"  value="10000">10000</option>
+                <option class="opcion"  value="15000">15000</option>
+                <option class="opcion"  value="20000">20000</option>
+                <option class="opcion"  value="30000">30000</option>
+            </select>
+        </div>
+
+        <div class="contenedor-opcion">
+            <label class="label-navegador">Cantidad de puertas</label>
+            <select id="puertas">
+                <option class="opcion"  value="">-seleccione</option>
+                <option class="opcion" value="2">2</option>
+                <option class="opcion"  value="4">4</option>
+        
+            </select>
+        </div>
+
+        <div class="contenedor-opcion">
+            <label class="label-navegador">Transmision</label>
+            <select id="transmision">
+                <option class="opcion"  value="">-seleccione</option>
+                <option class="opcion" value="automatica">Automatica</option>
+                <option class="opcion"  value="manual">Manual</option>
+        
+            </select>
+        </div>
+
+        <div class="contenedor-opcion">
+            <button class="boton-filtro">Filtrar</button>
+        </div>
+    </nav>
+
+
+    <div class="contenedor-autos">
+        <!-- Se genera con la lista dinamica -->
+    </div>
+
+    <div class="contenedor-carrito">
+        <div class="carrito">
+            <img class="img-carrito" src="src/img/carrito.png" alt="carrito">
+        </div>
+        <p class="p-cantidad">0</p>
+        <p class="p-carrito">Carrito</p>
+    </div>
+
+    <div class="contenedor-modal">
+        <div class="modal">
+            <div class="modal-tabla">
+
+                <H4>Productos</H4>
+                <div class="contenedor-productos">
+                   <!-- Agregados dinamicamente --> 
+                </div>
+                <div class="total">
+                    <h4 id="total-titulo">Total: <span>$ 0</span> </h4> 
+                     
+
+                </div>
+                <div class="contenedor-botones">
+                    <button class="botonModal cerrar-modal">CANCELAR</button>
+                    <button class="botonModal comprar-modal">COMPRAR</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <footer class="contenedor">
+        <div class="titulo">
+            <h1>Cars<span>DYNAMIC</span></h1>
+        </div>
+        <div class="titulo-icono">
+            <img class="icono" src="src/img/png-clipart-car-computer-icons-car-cartoon-compact-car-car.png" alt="Icono auto">
+            <label for="">LLamanos ahora: 1149608952</label>
+            <img class="icono" src="src/img/png-clipart-car-computer-icons-car-cartoon-compact-car-car.png" alt="Icono auto">
+        </div>
+    </footer> -->
+
+    <script defer src="build/js/lista_dinamica.js"></script>
+    <script src="build/js/listaAutos.js"></script>
+</body>
+</html>

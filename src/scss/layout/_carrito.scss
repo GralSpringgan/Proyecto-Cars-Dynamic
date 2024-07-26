@@ -1,0 +1,77 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m ;
+
+.contenedor-carrito{  
+    position: fixed; 
+    bottom: 3rem;  
+    right: 3rem;  
+    width: 10rem;
+    height: 10rem;  
+    border-radius: 50%; 
+    background-color: v.$Amarillo;  
+    cursor: pointer;  
+
+
+    .img-carrito{
+        width: 7rem;
+        height: 7rem;     
+        padding: 1.5rem; 
+        margin: 1rem;
+        position: absolute;
+        left: 3%;
+        top: -2%;    
+        
+    }
+
+    .p-cantidad{
+        position: absolute;
+        right: 1px;   
+        top: -2px; 
+        background-color: red;
+        border-radius: 50%;
+        width: 2rem; 
+        height: 2rem;  
+        padding: 2px;
+        text-align: center; 
+                       
+    }
+
+    .p-carrito{
+        position: absolute;
+        right: 7px;       
+        bottom: -10px;                  
+    }
+    
+}
+
+.alertaCompra{
+    display: flex;
+    margin: 3rem auto;     
+    width: 20rem;    
+    height: 9rem;   
+    justify-content: center;
+    text-align: center; 
+    border: 2px solid green;
+    border-radius: 7px;
+    background-color: rgb(46, 165, 46); 
+
+    @include m.Tablet{
+        margin: 8rem auto;
+        width: 100rem;
+        height: 30rem;
+        
+         
+    }
+ 
+    .compraParrafo{
+        color: v.$Amarillo;
+        font-size: 1.5rem;   
+        font-weight: 700; 
+        margin-top: 1.8rem;  
+
+        @include m.Tablet{
+            font-size: 7rem;
+            margin-top: 7rem; 
+        }
+    }
+} 

@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.navegador{
+    display: block;
+    background-color: v.$Azul;
+    padding: 1rem;
+    text-align: center;        
+    
+    @include m.Tablet{
+        display: flex;
+        justify-content: space-between;  
+    }
+}
+
+.contenedor-opcion{
+    margin: 1rem;    
+
+    .label-navegador{
+        color: v.$Amarillo;
+        font-size: 1.8rem; 
+        margin: .5rem;
+        margin-bottom: 1rem;   
+    }
+
+    select{
+        border-radius: 5px;
+        height: 2.3rem;
+        width: 10rem;    
+        margin: .5rem;      
+    }
+
+    .opcion{
+        border-radius: 5px;
+        background-color: rgb(181, 224, 222);
+        font-size: 1.3rem;  
+        text-align: center;
+ 
+    } 
+
+}
